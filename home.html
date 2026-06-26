@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Holy Spirit Fire Explosion Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#070707;
+    color:#fff;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* Header */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+    background:rgba(0,0,0,.92);
+    border-bottom:1px solid rgba(255,170,0,.2);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-icon{
+    font-size:40px;
+}
+
+.logo-text h2{
+    font-family:'Cinzel',serif;
+    color:#f7c14b;
+    font-size:1.8rem;
+    line-height:1;
+}
+
+.logo-text span{
+    letter-spacing:5px;
+    font-size:.75rem;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a:hover{
+    color:#f7c14b;
+}
+
+.live-btn{
+    background:#d89b2c;
+    color:white;
+    padding:12px 24px;
+    border-radius:6px;
+    font-weight:600;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:100px;
+    background:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+        url('https://images.unsplash.com/photo-1514894786521-5c5b4f7f4f1f?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-family:'Cinzel',serif;
+    font-size:5rem;
+    line-height:1.05;
+}
+
+.gold{
+    color:#f7c14b;
+}
+
+.hero p{
+    margin:25px 0;
+    font-size:1.2rem;
+    color:#ddd;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:35px;
+}
+
+.btn{
+    padding:15px 30px;
+    border-radius:6px;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:#d89b2c;
+    color:white;
+}
+
+.btn-outline{
+    border:1px solid #d89b2c;
+    color:white;
+}
+
+/* About */
+.section{
+    padding:90px 0;
+}
+
+.section-title{
+    font-family:'Cinzel',serif;
+    font-size:2.5rem;
+    margin-bottom:20px;
+    color:#f7c14b;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image{
+    height:450px;
+    border-radius:12px;
+    background:
+        linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.4)),
+        url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1200&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+/* Events */
+.events{
+    background:#0c0c0c;
+}
+
+.event-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#111;
+    border:1px solid rgba(247,193,75,.2);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.card-img{
+    height:220px;
+    background-size:cover;
+    background-position:center;
+}
+
+.card-body{
+    padding:25px;
+}
+
+.card h3{
+    color:#f7c14b;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#ccc;
+}
+
+/* Newsletter */
+.newsletter{
+    background:linear-gradient(90deg,#0a0a0a,#1a1204);
+    padding:70px 0;
+    text-align:center;
+}
+
+.newsletter h2{
+    font-family:'Cinzel',serif;
+    margin-bottom:20px;
+}
+
+.newsletter form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+}
+
+.newsletter input{
+    flex:1;
+    padding:16px;
+    border:none;
+    outline:none;
+}
+
+.newsletter button{
+    padding:16px 30px;
+    border:none;
+    background:#d89b2c;
+    color:white;
+    font-weight:600;
+}
+
+/* Footer */
+footer{
+    background:#050505;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+@media(max-width:992px){
+
+    .hero h1{
+        font-size:3.2rem;
+    }
+
+    .about-grid,
+    .event-cards{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .newsletter form{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <div class="logo">
+            <div class="logo-icon">🕊️🔥</div>
+            <div class="logo-text">
+                <h2>HOLY SPIRIT FIRE EXPLOSION</h2>
+                <span>MINISTRY</span>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="live-btn">Watch Live</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>
+                A PEOPLE <span class="gold">IGNITED</span><br>
+                BY THE HOLY SPIRIT
+            </h1>
+
+            <p>
+                “He will baptize you with the Holy Spirit and with fire.”
+                — Luke 3:16
+            </p>
+
+            <div class="hero-buttons">
+                <a href="joinus.html" class="btn btn-primary">Join Us This Sunday</a>
+                <a href="#" class="btn btn-outline">Watch Intro Video</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="about-grid">
+            <div>
+                <h2 class="section-title">A Call. A Fire. A Mission.</h2>
+
+                <p>
+                    Holy Spirit Fire Explosion Ministry is a Spirit-led
+                    ministry raising a generation passionate about God,
+                    empowered by the Holy Spirit, and committed to advancing
+                    the Kingdom through prayer, worship, evangelism,
+                    and discipleship.
+                </p>
+
+                <br>
+
+                <a href="#" class="btn btn-primary">
+                    Learn More
+                </a>
+            </div>
+
+            <div class="about-image"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section events">
+    <div class="container">
+        <h2 class="section-title">Upcoming Events</h2>
+
+        <div class="event-cards">
+
+            <div class="card">
+                <div class="card-img"
+                     style="background-image:url('https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1200&q=80')">
+                </div>
+                <div class="card-body">
+                    <h3>Sunday Service</h3>
+                    <p>Every Sunday • 9:00 AM</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img"
+                     style="background-image:url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80')">
+                </div>
+                <div class="card-body">
+                    <h3>Fire Night</h3>
+                    <p>A night of prayer, worship and revival.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img"
+                     style="background-image:url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80')">
+                </div>
+                <div class="card-body">
+                    <h3>Kingdom Conference</h3>
+                    <p>Three days of power-packed sessions and impartation.</p>
+                </div>
+            </div>
+
+        </div>s
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="container">
+        <h2>Stay Connected</h2>
+        <p>Get updates, sermons and ministry announcements.</p>
+
+        <br>
+
+        <form>
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 Holy Spirit Fire Explosion Ministry.
+        All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>

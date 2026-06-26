@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Holy Spirit Fire Explosion Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#071223;
+    color:#fff;
+}
+
+.contact-section{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(4,11,23,.88),rgba(4,11,23,.92)),
+    url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=80');
+    background-size:cover;
+    background-position:center;
+    padding:80px 8%;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+/* LEFT */
+
+.logo{
+    margin-bottom:30px;
+}
+
+.logo h2{
+    font-family:'Cinzel',serif;
+    color:#d4af37;
+    font-size:2.5rem;
+    line-height:1.2;
+}
+
+.contact-title{
+    font-family:'Cinzel',serif;
+    font-size:5rem;
+    line-height:.95;
+    margin-bottom:20px;
+}
+
+.contact-title span{
+    color:#d4af37;
+}
+
+.tagline{
+    font-size:1.3rem;
+    color:#ddd;
+    margin-bottom:15px;
+}
+
+.description{
+    font-size:1.05rem;
+    line-height:1.9;
+    color:#d9d9d9;
+    margin-bottom:40px;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.info-box{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    padding-bottom:20px;
+    border-bottom:1px solid rgba(212,175,55,.25);
+}
+
+.icon{
+    width:65px;
+    height:65px;
+    border:2px solid #d4af37;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#d4af37;
+    font-size:24px;
+}
+
+.info-text h4{
+    color:#d4af37;
+    margin-bottom:5px;
+    letter-spacing:1px;
+}
+
+.info-text p{
+    color:#eee;
+    line-height:1.7;
+}
+
+/* RIGHT */
+
+.right-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(212,175,55,.2);
+    backdrop-filter:blur(12px);
+    border-radius:25px;
+    overflow:hidden;
+}
+
+.right-image{
+    height:320px;
+    background:
+    linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.3)),
+    url('https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.message-box{
+    padding:40px;
+}
+
+.message-box h2{
+    color:#d4af37;
+    font-family:'Cinzel',serif;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.message-box p{
+    color:#ddd;
+    line-height:2;
+    margin-bottom:25px;
+}
+
+.blessing{
+    font-size:2rem;
+    color:#d4af37;
+    font-family:'Cinzel',serif;
+}
+
+/* CTA */
+
+.cta{
+    margin-top:30px;
+    text-align:center;
+}
+
+.cta-btn{
+    display:inline-block;
+    background:linear-gradient(135deg,#d4af37,#f3d46d);
+    color:#071223;
+    text-decoration:none;
+    padding:18px 45px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.cta-btn:hover{
+    transform:translateY(-4px);
+}
+
+/* FOOTER */
+
+.footer-bar{
+    background:linear-gradient(90deg,#d4af37,#f4d979);
+    color:#071223;
+    margin-top:70px;
+    padding:25px;
+    border-radius:15px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.socials a{
+    color:#071223;
+    font-size:24px;
+    margin-right:18px;
+}
+
+.website{
+    font-weight:600;
+    font-size:1.1rem;
+}
+
+.join-btn{
+    background:#071223;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:50px;
+}
+
+/* MAP BUTTON */
+
+.map-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#d4af37;
+    color:#071223;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.map-btn:hover{
+    background:#f4d979;
+}
+
+@media(max-width:1000px){
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-title{
+    font-size:3.5rem;
+}
+
+}
+
+@media(max-width:600px){
+
+.contact-title{
+    font-size:2.8rem;
+}
+
+.logo h2{
+    font-size:1.8rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="contact-section">
+
+<div class="container">
+
+<div class="contact-grid">
+
+    <!-- LEFT SIDE -->
+
+    <div>
+
+        <div class="logo">
+            <h2>
+                HOLY SPIRIT<br>
+                FIRE EXPLOSION MINISTRY
+            </h2>
+        </div>
+
+        <h1 class="contact-title">
+            CONTACT <span>US</span>
+        </h1>
+
+        <p class="tagline">
+            We would love to hear from you!
+        </p>
+
+        <p class="description">
+            Whether you have a prayer request, need spiritual guidance,
+            want to join a ministry, or simply desire to worship with us,
+            our team is ready to connect with you.
+            Let's grow together in Christ.
+        </p>
+
+        <div class="contact-info">
+
+            <div class="info-box">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info-text">
+                    <h4>PHONE</h4>
+                    <p>+233 XX XXX XXXX</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-text">
+                    <h4>EMAIL</h4>
+                    <p>info@holyspiritfireexplosion.org</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">
+                    <i class="fas fa-location-dot"></i>
+                </div>
+                <div class="info-text">
+                    <h4>ADDRESS</h4>
+                    <p>
+                        Olebu, Ablekuma<br>
+                        Near Melcom Olebu<br>
+                        Accra, Ghana
+                    </p>
+
+                    <a
+                    href="https://www.google.com/maps/search/?api=1&query=Melcom+Olebu+Ablekuma+Accra+Ghana"
+                    target="_blank"
+                    class="map-btn">
+                        View On Map
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="info-text">
+                    <h4>SERVICE TIMES</h4>
+                    <p>
+                        Sunday School: 8:00 AM<br>
+                        Sunday Service: 9:00 AM
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="right-card">
+
+        <div class="right-image"></div>
+
+        <div class="message-box">
+
+            <h2>WE ARE HERE FOR YOU</h2>
+
+            <p>
+                No matter where you are on your spiritual journey,
+                you are welcome here. Our church family is ready
+                to pray with you, encourage you, and walk alongside
+                you as you grow in faith and discover God's purpose
+                for your life.
+            </p>
+
+            <p>
+                We believe every person matters to God and has a
+                place in His Kingdom.
+            </p>
+
+            <div class="blessing">
+                God Bless You!
+            </div>
+
+            <div class="cta">
+                <a href="#" class="cta-btn">
+                    Join Our Family Today
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER BAR -->
+
+<div class="footer-bar">
+
+    <div class="footer-content">
+
+        <div class="socials">
+            <strong>FOLLOW US</strong>
+            <br><br>
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <div class="website">
+            🌐 www.holyspiritfireexplosion.org
+        </div>
+
+        <a href="#" class="join-btn">
+            🔥 JOIN OUR FAMILY TODAY
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

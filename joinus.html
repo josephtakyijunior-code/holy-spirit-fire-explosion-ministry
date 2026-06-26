@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Us This Sunday | Holy Spirit Fire Explosion Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#fff;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+    url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=80');
+    background-size:cover;
+    background-position:center;
+    padding:50px;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:50px;
+}
+
+.logo-icon{
+    font-size:55px;
+}
+
+.logo-text h2{
+    font-family:'Cinzel',serif;
+    color:#f6c04e;
+    font-size:2rem;
+    line-height:1.1;
+}
+
+.logo-text span{
+    letter-spacing:6px;
+    font-size:.8rem;
+}
+
+.main-title{
+    max-width:900px;
+}
+
+.main-title h1{
+    font-family:'Cinzel',serif;
+    font-size:7rem;
+    line-height:.95;
+    font-weight:800;
+}
+
+.gold{
+    color:#f6c04e;
+}
+
+.subtitle{
+    font-size:1.4rem;
+    margin-top:25px;
+    color:#ddd;
+    letter-spacing:1px;
+}
+
+.features{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature{
+    text-align:center;
+}
+
+.icon{
+    width:90px;
+    height:90px;
+    border:2px solid #f6c04e;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    margin:auto;
+    color:#f6c04e;
+}
+
+.feature h4{
+    margin-top:15px;
+    font-size:1rem;
+    font-weight:500;
+}
+
+/* Information Cards */
+
+.info-section{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:25px;
+}
+
+.card{
+    background:rgba(0,0,0,.75);
+    border:1px solid rgba(246,192,78,.2);
+    border-radius:12px;
+    padding:35px;
+    backdrop-filter:blur(8px);
+}
+
+.card-title{
+    font-family:'Cinzel',serif;
+    color:#f6c04e;
+    font-size:1.8rem;
+    margin-bottom:25px;
+}
+
+.time{
+    font-size:2rem;
+    font-weight:700;
+    color:#fff;
+}
+
+.card ul{
+    list-style:none;
+}
+
+.card ul li{
+    margin-bottom:15px;
+    color:#ddd;
+}
+
+.location p{
+    margin-bottom:15px;
+    font-size:1.1rem;
+    color:#ddd;
+}
+
+.map-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#d89b2c;
+    color:#fff;
+    padding:15px 30px;
+    border-radius:6px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.map-btn:hover{
+    background:#f6c04e;
+    color:#000;
+}
+
+.welcome{
+    margin-top:40px;
+    background:linear-gradient(90deg,#f6c04e,#d89b2c);
+    color:#000;
+    border-radius:12px;
+    padding:35px;
+    text-align:center;
+}
+
+.welcome h2{
+    font-size:2.3rem;
+    margin-bottom:10px;
+}
+
+.invite-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#000;
+    color:#f6c04e;
+    border-radius:6px;
+    font-weight:600;
+}
+
+.scripture{
+    text-align:center;
+    margin-top:40px;
+    font-size:1.3rem;
+    color:#ddd;
+    font-style:italic;
+}
+
+.scripture span{
+    color:#f6c04e;
+}
+
+@media(max-width:1000px){
+
+    .main-title h1{
+        font-size:4rem;
+    }
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .info-section{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .hero{
+        padding:25px;
+    }
+
+    .main-title h1{
+        font-size:3rem;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+    <!-- Logo -->
+    <div class="logo">
+        <div class="logo-icon">🕊️🔥</div>
+
+        <div class="logo-text">
+            <h2>HOLY SPIRIT<br>FIRE EXPLOSION</h2>
+            <span>MINISTRY</span>
+        </div>
+    </div>
+
+    <!-- Heading -->
+    <div class="main-title">
+        <h1>
+            JOIN US<br>
+            <span class="gold">THIS SUNDAY</span>
+        </h1>
+
+        <p class="subtitle">
+            COME EXPERIENCE GOD'S PRESENCE, POWER AND PURPOSE
+        </p>
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+
+        <div class="feature">
+            <div class="icon">🙌</div>
+            <h4>INSPIRING WORSHIP</h4>
+        </div>
+
+        <div class="feature">
+            <div class="icon">📖</div>
+            <h4>POWERFUL WORD</h4>
+        </div>
+
+        <div class="feature">
+            <div class="icon">🔥</div>
+            <h4>HOLY SPIRIT ENCOUNTER</h4>
+        </div>
+
+        <div class="feature">
+            <div class="icon">👨‍👩‍👧‍👦</div>
+            <h4>LOVING COMMUNITY</h4>
+        </div>
+
+    </div>
+
+    <!-- Cards -->
+    <div class="info-section">
+
+        <div class="card">
+            <h3 class="card-title">SERVICE TIMES</h3>
+
+            <p class="time">Sunday Service</p>
+            <p>9:00 AM</p>
+
+            <br>
+
+            <p class="time">Sunday School</p>
+            <p>8:00 AM</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">WHAT TO EXPECT</h3>
+
+            <ul>
+                <li>✓ Atmosphere of Worship</li>
+                <li>✓ Life-Changing Word</li>
+                <li>✓ Prayer & Deliverance</li>
+                <li>✓ Holy Spirit Encounter</li>
+                <li>✓ Friendly Family Environment</li>
+            </ul>
+        </div>
+
+        <div class="card location">
+            <h3 class="card-title">LOCATION</h3>
+
+            <p>Holy Spirit Fire Explosion Ministry</p>
+            <p>Olebu, Ablekuma</p>
+            <p>Accra, Ghana</p>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Melcom+Olebu+Ablekuma+Accra+Ghana"
+                target="_blank"
+                class="map-btn">
+                📍 VIEW ON MAP
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Welcome -->
+    <div class="welcome">
+        <h2>WE CAN'T WAIT TO WELCOME YOU!</h2>
+
+        <p>
+            Come as you are and leave transformed by God's presence.
+        </p>
+
+        <a href="invite.html" class="invite-btn">
+            🔥 INVITE A FRIEND
+        </a>
+    </div>
+
+    <!-- Scripture -->
+    <div class="scripture">
+        "He will baptize you with the Holy Spirit and with fire."
+        <span>— Luke 3:16</span>
+    </div>
+
+</div>
+
+</section>
+
+</body>
+</html>

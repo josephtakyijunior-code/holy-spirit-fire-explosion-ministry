@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Ministries | Holy Spirit Fire Explosion Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#081423;
+    color:white;
+}
+
+.ministry-header{
+    text-align:center;
+    padding:100px 20px;
+    background:
+    linear-gradient(rgba(8,20,35,.85),rgba(8,20,35,.95)),
+    url('https://images.unsplash.com/photo-1516280440614-37939bbacd81');
+    background-size:cover;
+    background-position:center;
+}
+
+.ministry-header h1{
+    font-family:'Cinzel',serif;
+    font-size:4rem;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.ministry-header p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.2rem;
+    color:#ddd;
+}
+
+.ministries{
+    padding:80px 8%;
+}
+
+.ministry-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.ministry-card{
+    background:#10253d;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    border:1px solid rgba(212,175,55,.2);
+}
+
+.ministry-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(212,175,55,.2);
+}
+
+.ministry-image{
+    height:220px;
+    background-size:cover;
+    background-position:center;
+}
+
+.choir{
+    background-image:url('https://images.unsplash.com/photo-1516280440614-37939bbacd81');
+}
+
+.instrumental{
+    background-image:url('https://images.unsplash.com/photo-1511379938547-c1f69419868d');
+}
+
+.drama{
+    background-image:url('https://images.unsplash.com/photo-1503095396549-807759245b35');
+}
+
+.dance{
+    background-image:url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d');
+}
+
+.ministry-content{
+    padding:30px;
+}
+
+.ministry-content h3{
+    color:#d4af37;
+    margin-bottom:15px;
+    font-size:1.7rem;
+}
+
+.ministry-content p{
+    color:#d9d9d9;
+    line-height:1.8;
+}
+
+/* Invitation Section */
+
+.join-section{
+    padding:90px 10%;
+    background:linear-gradient(135deg,#d4af37,#f7d675);
+    color:#081423;
+    text-align:center;
+}
+
+.join-section h2{
+    font-family:'Cinzel',serif;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.join-section p{
+    max-width:850px;
+    margin:auto;
+    font-size:1.15rem;
+    line-height:2;
+}
+
+.join-btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#081423;
+    color:white;
+    text-decoration:none;
+    padding:18px 45px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.join-btn:hover{
+    background:#10253d;
+}
+
+.note-box{
+    max-width:900px;
+    margin:50px auto 0;
+    background:rgba(255,255,255,.15);
+    padding:25px;
+    border-radius:15px;
+    font-size:1.05rem;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#06101d;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+
+.ministry-header h1{
+    font-size:2.8rem;
+}
+
+.join-section h2{
+    font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="ministry-header">
+    <h1>OUR MINISTRIES</h1>
+    <p>
+        Discover your place in God's house. Every ministry is an opportunity
+        to serve, grow spiritually, develop your gifts, and impact lives
+        through the power of Jesus Christ.
+    </p>
+</section>
+
+<section class="ministries">
+
+<div class="ministry-grid">
+
+    <div class="ministry-card">
+        <div class="ministry-image choir"></div>
+        <div class="ministry-content">
+            <h3>🎵 Choir Ministry</h3>
+            <p>
+                Leading the congregation into God's presence through powerful
+                worship, praise, and spirit-filled songs that glorify Christ
+                and inspire faith.
+            </p>
+        </div>
+    </div>
+
+    <div class="ministry-card">
+        <div class="ministry-image instrumental"></div>
+        <div class="ministry-content">
+            <h3>🎹 Instrumental Ministry</h3>
+            <p>
+                Dedicated musicians using their talents on keyboards, drums,
+                guitars, and other instruments to create an atmosphere of
+                worship and spiritual encounter.
+            </p>
+        </div>
+    </div>
+
+    <div class="ministry-card">
+        <div class="ministry-image drama"></div>
+        <div class="ministry-content">
+            <h3>🎭 Drama Ministry</h3>
+            <p>
+                Bringing biblical truths and life-changing messages alive
+                through impactful stage performances, storytelling, and
+                Christian theatre.
+            </p>
+        </div>
+    </div>
+
+    <div class="ministry-card">
+        <div class="ministry-image dance"></div>
+        <div class="ministry-content">
+            <h3>💃 Dance Ministry</h3>
+            <p>
+                Expressing worship through creative movement and dance,
+                celebrating God's goodness while ministering to hearts and
+                encouraging the congregation.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<section class="join-section">
+
+    <h2>YOU ARE INVITED TO SERVE</h2>
+
+    <p>
+        God has placed unique gifts, talents, and abilities inside you.
+        Whether you love singing, playing instruments, acting, dancing,
+        or simply have a passion to serve, there is a place for you at
+        Holy Spirit Fire Explosion Ministry.
+    </p>
+
+    <a href="#contact" class="join-btn">
+        Join A Ministry Today
+    </a>
+
+    <div class="note-box">
+        <strong>📢 Special Invitation:</strong><br><br>
+
+        We warmly welcome everyone who desires to serve God and grow
+        spiritually. No matter your experience level, our ministry leaders
+        will gladly guide and mentor you. Come and be part of a family that
+        worships together, serves together, and impacts lives for Christ.
+
+        <br><br>
+
+        <strong>
+            "Your gift can become someone's blessing. Join us and make a
+            difference for God's Kingdom."
+        </strong>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Holy Spirit Fire Explosion Ministry | Raising a Generation on Fire for God
+</footer>
+
+</body>
+</html>
